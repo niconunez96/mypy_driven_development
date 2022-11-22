@@ -1,7 +1,4 @@
-a: int | str = "asd"
-
-
-def match_a() -> None:
+def match_a(a: int | str) -> None:
     match (a):
         case int(value):
             print(f"Int with value: {value}")
