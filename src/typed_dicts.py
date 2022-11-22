@@ -1,5 +1,5 @@
 from dataclasses import dataclass
-from typing import TypedDict, Any
+from typing import Any, TypedDict
 from uuid import UUID, uuid4
 
 

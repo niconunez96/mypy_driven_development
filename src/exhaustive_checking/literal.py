@@ -1,6 +1,6 @@
 from typing import Literal
-from typing_extensions import assert_never
 
+from typing_extensions import assert_never
 
 Command = Literal["ProcessOrder", "SendEmail", "SendPushNotification"]
 

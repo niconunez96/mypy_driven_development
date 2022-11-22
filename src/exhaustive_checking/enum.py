@@ -1,5 +1,6 @@
-from typing_extensions import assert_never
 from enum import Enum
+
+from typing_extensions import assert_never
 
 
 class OrderStatus(Enum):

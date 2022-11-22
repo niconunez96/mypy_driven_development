@@ -1,4 +1,4 @@
-from typing import Dict, Type, Literal
+from typing import Dict, Literal, Type
 
 
 class Tool:
