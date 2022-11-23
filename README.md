@@ -40,9 +40,9 @@ why do we need **static typing** on a **dynamic typing** language ?
 
 ### Basic config ⚙️
 
-`pip install mypy`
-[MyPy Config file](./mypy.ini)
-[Config guide](https://mypy.readthedocs.io/en/stable/config_file.html)
+- `pip install mypy`
+- [MyPy Config file](./mypy.ini)
+- [Config guide](https://mypy.readthedocs.io/en/stable/config_file.html)
 
 ### Configuring specific packages with custom rules 📦
 
