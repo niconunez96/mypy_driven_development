@@ -14,7 +14,7 @@
 9. [Pattern Matching](./src/pattern_matching.py)
 10. [Generics](./src/generics/__init__.py)
 
-## What and Why
+## What and Why 🤔
 
 Python has started to add type annotation. Buuut type annotations are not useful by itself, to have a full typing experience you need **mypy**.
 
@@ -34,17 +34,17 @@ why do we need **static typing** on a **dynamic typing** language ?
 
 ![Feedback loop](./assets/feedbackLoop.png)
 
-## Mypy Config
+## Mypy Config 🤖
 
 [Mypy playground](https://mypy-play.net/?mypy=latest&python=3.10)
 
-### Basic config
+### Basic config ⚙️
 
 `pip install mypy`
 [MyPy Config file](./mypy.ini)
 [Config guide](https://mypy.readthedocs.io/en/stable/config_file.html)
 
-### Configuring specific packages with custom rules
+### Configuring specific packages with custom rules 📦
 
 If we have a legacy project that we want to implement mypy, we can do it
 progressively without creating a full blown migration PR.
@@ -58,7 +58,7 @@ check_untyped_defs = True
 ignore_errors = True
 ```
 
-### Working with 3rd party libraries
+### Working with 3rd party libraries 📚
 
 1. Check if the library is inside https://github.com/python/typeshed, if so install it.
 2. Define the library inside the stub directory if it is strictly necessary or does not add an extra overhead.
@@ -86,43 +86,43 @@ python_version = 3.10
 mypy_path = ./stubs/
 ```
 
-## Optional
+## Optional 🫥
 
 [Optional](./src/optional.py)
 
-## Literals
+## Literals 🫀
 
 [Literals](./src/literals.py)
 
-## Union
+## Union 🧑🏼‍🤝🏼‍🧑🏼
 
 [Union](./src/union_type.py)
 
-## Final
+## Final 🔚
 
 [Final](./src/final_type.py)
 
-## Data Classes
+## Data Classes 🪨
 
 [Data Classes](./src/dataclasses.py)
 
-## Typed Dicts
+## Typed Dicts 🐍☕
 
 [Typed Dicts](./src/typed_dicts.py)
 
-## Exhaustive checking
+## Exhaustive checking 🚓
 
 [Exhaustive checking](./src/exhaustive_checking/__init__.py)
 
-## Protocol vs ABC
+## Protocol vs ABC 📝
 
 [Protocol vs ABC](./src/protocol_vs_abc.py)
 
-## Pattern Matching
+## Pattern Matching 👮🏼‍♀️🕵🏼🧑🏼‍🚀
 
 [Pattern Matching](./src/pattern_matching.py)
 [Info](https://peps.python.org/pep-0636/#abstract)
 
-## Generics
+## Generics 🎁
 
 [Generics](./src/generics/__init__.py)
