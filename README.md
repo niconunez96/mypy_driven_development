@@ -2,17 +2,17 @@
 
 ## Index
 
-0. [MyPy Config](#mypy-config)
-1. [Optional](#optional)
-2. [Literals](./src/literals.py)
-3. [Union](./src/union_type.py)
-4. [Final](#final)
-5. [Data Classes](./src/dataclasses.py)
-6. [Typed Dicts](#typed-dicts)
-7. [Exhaustive checking](./src/exhaustive_checking/__init__.py)
-8. [Protocol vs ABC](./src/protocol_vs_abc.py)
-9. [Pattern Matching](./src/pattern_matching.py)
-10. [Generics](./src/generics/__init__.py)
+0. [MyPy Config](#mypy-config-🤖)
+1. [Optional](#optional-🫥)
+2. [Literals](#literals-🫀)
+3. [Union](#union-🧑🏼‍🤝🏼‍🧑🏼)
+4. [Final](#final-🔚)
+5. [Data Classes](#data-classes-🪨)
+6. [Typed Dicts](#typed-dicts-🐍☕)
+7. [Exhaustive checking](#exhaustive-checking-🚓)
+8. [Protocol vs ABC](#protocol-vs-abc-📝)
+9. [Pattern Matching](#pattern-matching-👮🏼‍♀️🕵🏼🧑🏼‍🚀)
+10. [Generics](#generics-🎁)
 
 ## What and Why 🤔
 
