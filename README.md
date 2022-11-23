@@ -1,4 +1,6 @@
-# Index
+# Mypy driven development 🐍
+
+## Index
 
 0. [MyPy Config](#mypy-config)
 1. [Optional](#optional)
@@ -11,6 +13,26 @@
 8. [Protocol vs ABC](./src/protocol_vs_abc.py)
 9. [Pattern Matching](./src/pattern_matching.py)
 10. [Generics](./src/generics/__init__.py)
+
+## What and Why
+
+Python has started to add type annotation. Buuut type annotations are not useful by itself, to have a full typing experience you need **mypy**.
+
+Well mypy is a static type checker that you need to run "manually", so type annotations and mypy do nothing on runtime.
+
+Mypy is another tool that needs to be installed as flake8, black, isort.
+
+Before jumping to mypy details, Who hates Java ?
+
+![Homer](./assets/homer.gif)
+
+why do we need **static typing** on a **dynamic typing** language ?
+
+1. Security
+2. Explicit APIs
+3. Feedback loop
+
+![Feedback loop](./assets/feedbackLoop.png)
 
 ## Mypy Config
 
