@@ -14,10 +14,55 @@
 
 ## Mypy Config
 
-[MyPy Config](./mypy.ini)
+[Mypy playground](https://mypy-play.net/?mypy=latest&python=3.10)
 
-Basic config
-Configuring specific packages with custom rules
+### Basic config
+
+`pip install mypy`
+[MyPy Config file](./mypy.ini)
+[Config guide](https://mypy.readthedocs.io/en/stable/config_file.html)
+
+### Configuring specific packages with custom rules
+
+If we have a legacy project that we want to implement mypy, we can do it
+progressively without creating a full blown migration PR.
+Or if we want a more relax mypy config in our tests we can do it using this technique.
+
+```ini
+[mypy-module_name.directory.file]
+; Custom configs goes here
+disallow_untyped_defs = False
+check_untyped_defs = True
+ignore_errors = True
+```
+
+### Working with 3rd party libraries
+
+1. Check if the library is inside https://github.com/python/typeshed, if so install it.
+2. Define the library inside the stub directory if it is strictly necessary or does not add an extra overhead.
+3. Ignore missing imports and Cast the return types of the library if necessary
+
+We can bypass this error by doing
+
+```
+Skipping analyzing "celery": module is installed, but missing library stubs or py.typed marker  [import]mypy
+See https://mypy.readthedocs.io/en/stable/running_mypy.html#missing-importsmypy
+```
+
+1. Add the following setting in mypy.ini
+
+```ini
+[mypy-celery.*]
+ignore_missing_imports = True
+```
+
+2. Add stub directory with the needed types
+
+```ini
+[mypy]
+python_version = 3.10
+mypy_path = ./stubs/
+```
 
 ## Optional
 
