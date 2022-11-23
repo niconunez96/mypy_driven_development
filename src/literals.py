@@ -28,7 +28,7 @@ Dict[str, Tool] --> this means a dictionary that has:
 strings as key
 Tool "instances" as value
 
-Using Type[Tool] we say now:
+Using Dict[str, Type[Tool]] we say now:
 strings as key
 Tool "classes" as value
 """
