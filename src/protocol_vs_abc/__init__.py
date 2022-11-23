@@ -63,7 +63,7 @@ def send_emails_protocol(user_id: str, email_sender: EmailSenderProtocol) -> Non
     result = email_sender.send_bulk(email_messages)
     match (result):
         case None:
-            print("Email has been sent successfully")
+            print("Email has been sent successfully ✅")
         case list() as emails_unsent:
             for email_unsent in emails_unsent:
                 print(email_unsent.failure)
@@ -80,7 +80,7 @@ def send_emails_abc(user_id: str, email_sender: EmailSenderABC) -> None:
     result = email_sender.send_bulk(email_messages)
     match (result):
         case None:
-            print("Email has been sent successfully")
+            print("Email has been sent successfully ✅")
         case list() as emails_unsent:
             for email_unsent in emails_unsent:
                 print(email_unsent.failure)

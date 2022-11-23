@@ -38,10 +38,12 @@ why do we need **static typing** on a **dynamic typing** language ?
 
 [Mypy playground](https://mypy-play.net/?mypy=latest&python=3.10)
 
+[Mypy Getting Started](https://mypy.readthedocs.io/en/stable/getting_started.html)
+
 ### Basic config ⚙️
 
 - `pip install mypy`
-- [MyPy Config file](./mypy.ini)
+- [Mypy Config file](./mypy.ini)
 - [Config guide](https://mypy.readthedocs.io/en/stable/config_file.html)
 
 ### Configuring specific packages with custom rules 📦
