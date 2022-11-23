@@ -8,13 +8,12 @@ from src.optional import main as omain
 from src.pattern_matching import main as pmain
 from src.typed_dicts import main as tmain
 from src.union_type import main as umain
+from src.protocol_vs_abc import main as pabcmain
+
 
 print("REMEMBER, mypy DOESN'T EXIST at runtime 🫠")
 
-# print("\nGENERIC MAIN 1\n")
-# gmain_1()
-# print("\nGENERIC MAIN 2\n")
-# gmain_2()
+
 # print("\nOPTIONAL MAIN\n")
 # omain()
 # print("\nLITERAL MAIN\n")
@@ -29,5 +28,11 @@ print("REMEMBER, mypy DOESN'T EXIST at runtime 🫠")
 # tmain()
 # print("\nDATACLASSES MAIN\n")
 # dmain()
-print("\nPATTERN MATCHING MAIN\n")
-pmain()
+# print("\nPATTERN MATCHING MAIN\n")
+# pmain()
+print("\nPROTOCOL VS ABC MAIN\n")
+pabcmain()
+# print("\nGENERIC MAIN 1\n")
+# gmain_1()
+# print("\nGENERIC MAIN 2\n")
+# gmain_2()
